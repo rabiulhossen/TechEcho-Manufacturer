@@ -60,8 +60,8 @@ export default function Register() {
         onSubmit={handleSubmit(onSubmit)}
       >
         
-        <label class="label">
-          <span class="label-text">Enter Your Name</span>
+        <label className="label">
+          <span className="label-text">Enter Your Name</span>
         </label>
         <input
           type="text"
@@ -70,8 +70,8 @@ export default function Register() {
           className="input input-bordered  input-primary w-full max-w-xs"
           {...register("name", { required: true })}
         />
-        <label class="label">
-          <span class="label-text">Enter Your Email</span>
+        <label className="label">
+          <span className="label-text">Enter Your Email</span>
         </label>
         <input
           type="email"
@@ -81,8 +81,8 @@ export default function Register() {
           {...register("email", { required: true })}
         />
         {errors.email?.type === "required" && "Email is required"}
-        <label class="label">
-          <span class="label-text">Enter Your Password</span>
+        <label className="label">
+          <span className="label-text">Enter Your Password</span>
         </label>
         <input
           type="password"

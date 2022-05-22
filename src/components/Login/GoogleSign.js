@@ -25,7 +25,7 @@ const GoogleSign = () => {
      return (
           <div>
    
-  <div class="divider">OR</div>
+  <div className="divider">OR</div>
  
                {errorElement}
 

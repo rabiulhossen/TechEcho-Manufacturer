@@ -60,8 +60,8 @@ let errorElement;
         onSubmit={handleSubmit(onSubmit)}
       >
         
-        <label class="label">
-          <span class="label-text">Enter Your Email</span>
+        <label className="label">
+          <span className="label-text">Enter Your Email</span>
         </label>
         <input
           type="email"
@@ -70,8 +70,8 @@ let errorElement;
           {...register("email", { required: true })}
         />
         {errors.email?.type === "required" && "Email is required"}
-        <label class="label">
-          <span class="label-text">Enter Your Password</span>
+        <label className="label">
+          <span className="label-text">Enter Your Password</span>
         </label>
         <input
           type="password"
