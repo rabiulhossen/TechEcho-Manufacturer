@@ -3,9 +3,9 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-<footer className="footer p-10 bg-stone-400 text-base-content">
+<footer className="footer p-10 bg-indigo-400 text-base-content">
   <div>
-    <span className="footer-title text-gray-900">Services</span> 
+    <span className="footer-title text-zinc-900">Services</span> 
     <a className="link link-hover text-white">Branding</a> 
     <a className="link link-hover text-white">Design</a> 
     <a className="link link-hover text-white">Advertisement</a>

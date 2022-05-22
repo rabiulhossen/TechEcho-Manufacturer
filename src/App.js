@@ -9,7 +9,7 @@ import Notfound from "./components/others/Notfound";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App   bg-gradient-to-r from-zinc-600 to-purple-500">
       <Header />
       <Routes>
 
