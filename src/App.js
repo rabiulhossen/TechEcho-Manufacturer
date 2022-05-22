@@ -12,7 +12,10 @@ import Register from "./components/Login/Register";
 function App() {
   return (
     <div className="App bg-gradient-to-r from-sky-400 via-purple-400 to-sky-400">
+      
       <Header />
+
+      
       <Routes>
 
         <Route path="/home" element={<Home></Home>} />
