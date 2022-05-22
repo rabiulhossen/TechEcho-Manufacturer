@@ -6,10 +6,11 @@ import Home from "./components/home/Home";
 import Blogs from "./components/others/Blogs";
 import About from "./components/others/About";
 import Notfound from "./components/others/Notfound";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
-    <div className="App   bg-gradient-to-r from-zinc-600 to-purple-500">
+    <div className="App bg-gradient-to-r from-indigo-500">
       <Header />
       <Routes>
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/about" element={<About></About>} />
+        <Route path="/login" element={<Login></Login>} />
         <Route path="*" element={<Notfound></Notfound>} />
       </Routes>
 

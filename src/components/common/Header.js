@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Dashboard', to: '#', current: false },
   { name: 'Blogs', to: '/blogs', current: false },
   { name: 'About Us', to: '/about', current: false },
-  { name: 'Login', to: '#', current: false },
+  { name: 'Login', to: '/login', current: false },
 ]
 
 function classNames(...classes) {
