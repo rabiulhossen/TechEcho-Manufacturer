@@ -12,6 +12,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import RequireAuth from "./components/Login/RequireAuth";
 import AddOrder from "./components/Dashboard/AddOrder";
 import MyOrders from "./components/Dashboard/MyOrders";
+import Profile from "./components/Dashboard/Profile";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route path="portfolio" element={<MyOrders></MyOrders>} />
+          <Route index element={<MyOrders></MyOrders>}> </Route> 
+          <Route path="profile" element={<Profile />}> </Route> 
         </Route>
         <Route path="*" element={<Notfound></Notfound>} />
       </Routes>

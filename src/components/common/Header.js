@@ -85,8 +85,16 @@ export default function Header() {
 
   {/* profile dropdown under */}
               </div>
+              { user &&
+              <label for="dash-sidebar" class=" btn-primary 
+              sm:block
+              z-50
+              
+              drawer-button lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 inherit-1.5 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+</svg></label>}
               {   user ?
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 z-20">
               
                 
                   <Menu as="div" className="ml-3 relative">
@@ -154,9 +162,11 @@ export default function Header() {
                     </Transition>
                   </Menu>
                 
-              </div> : <Link className="font-bold font-sans hover:bg-purple-800 hover:text-white
+              </div> : <Link className="font-bold font-sans 
+              bg-purple-600 hover:bg-purple-900 text-white
                           active:bg-purple-300
                           focus:bg-sky-200
+                      
                           px-3 py-2 rounded-md text-md" to="/login">Login</Link>
 }
             </div>

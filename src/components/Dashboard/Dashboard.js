@@ -1,25 +1,25 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 export default function Dashboard() {
   return (
     <div>
 
 <div class="drawer drawer-mobile">
-  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center">
-  <h2 className='text-5xl font-serif text-slate-600'>welcome to dashboard</h2>
+  <input id="dash-sidebar" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+  <h2 className='text-3xl font-serif text-slate-700 my-3 font-bold'>welcome to dashboard</h2>
 <Outlet></Outlet>
 
-    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+   
   
   </div> 
   <div class="drawer-side">
-    <label for="my-drawer-2" class="drawer-overlay"></label> 
+    <label for="dash-sidebar" class="drawer-overlay"></label> 
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
       {/* <!-- Sidebar content here --> */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      <li><Link to="/dashboard">up</Link></li>
+      <li><Link to="/dashboard/profile">portfolio</Link></li>
     </ul>
   
   </div>
