@@ -13,6 +13,7 @@ import RequireAuth from "./components/Login/RequireAuth";
 import AddOrder from "./components/Dashboard/AddOrder";
 import MyOrders from "./components/Dashboard/MyOrders";
 import Profile from "./components/Dashboard/Profile";
+import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/about" element={<About></About>} />
+        <Route path="myportfolio" element={<MyPortfolio></MyPortfolio>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/register" element={<Register></Register>} />
         <Route
@@ -34,8 +36,12 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route index element={<MyOrders></MyOrders>}> </Route> 
-          <Route path="profile" element={<Profile />}> </Route> 
+          <Route index element={<MyOrders></MyOrders>}>
+            {" "}
+          </Route>
+          <Route path="profile" element={<Profile />}>
+            {" "}
+          </Route>
         </Route>
         <Route path="*" element={<Notfound></Notfound>} />
       </Routes>
