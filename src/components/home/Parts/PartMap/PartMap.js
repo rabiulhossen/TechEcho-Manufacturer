@@ -5,9 +5,9 @@ import Part from '../Part';
 export default function PartMap() {
 
      const [show, setShow] = useState([])
-
+console.log(show);
      useEffect(() => {
-          fetch("http://localhost:5000/parts")
+          fetch('http://localhost:5000/parts')
             .then((res) => res.json())
             .then((data) => setShow(data));
         }, []);
@@ -19,10 +19,10 @@ export default function PartMap() {
 <div className='part-container'>
 
 {
-     show.map(parts => {
+     show.map(partt => {
           <Part 
-          key={parts._id} 
-          parts={parts}
+          key={partt._id} 
+          part={partt}
           
           ></Part>
      })

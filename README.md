@@ -1,34 +1,31 @@
-# This is Manufacturer Company Website...
+# THIS IS MANUFECTURER COMPANY WEBSITE...
 
-This project was bootstrapped with [firebase deploy](https://github.com/facebook/create-react-app).
+This project was Boosted with [firebase deploy](https://github.com/facebook/create-react-app).
+
 
 ## Available Features
-- 
+
 - This is MERN Stack Project.
+- User & Admin role created.
+- User record data delete data.
+- Attractive dashboard implement.
 - Unique and Creative outlook.
 - SPA Application.
+- Firebase Verificaion.
 
 
-In the project directory, you can run:
+## Technology bring to play
 
-### `npm start`
-
-
-
-### `npm test`
-
-### `npm run build`
-
-ce.
+### HTML5 CSS3 TailwindCss
+### Javascript ES6 ReactJs
+### NodeJs ExpressJs Mongodb....
 
 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### If you Want run your local directory
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
+#### `npm install`
+#### `npm start`
 
 
 ## Learn More
