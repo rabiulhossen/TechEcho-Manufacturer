@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitle from '../common/PageTitle'
 import Bannner from './Bannner'
+import Global from './Global'
 import Part from './Parts/Part'
 import Summary from './Summary'
 
@@ -12,6 +13,7 @@ export default function Home() {
 <Bannner></Bannner>
 <Part></Part>
 <Summary />
+<Global></Global>
     </div>
   )
 }
