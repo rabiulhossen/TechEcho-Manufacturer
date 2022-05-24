@@ -16,15 +16,29 @@ export default function Aboutme() {
                             <img style={{width:'100%',border:'3px solid #184042'}} src="https://i.ibb.co/fkj29Yp/edit.jpg" alt="my about"/>
                         </Col>
                         <Col>
-<button className='btn btn-primary mx-5'>
-    <Link to="www.facebook.com"> project one</Link>
+                        <h1 className='text-bold font-sans text-4xl mt-5'>Project Information</h1>
+<div className='my-7 pt-6 pb-3'>
+<button className='btn btn-wide bg-primary text-black mx-auto px-4'>
+    <a href='https://rabiulhossen.github.io/demo-ecommerce/#home'>Demo Ecommerce</a>
+    
 </button>
-<button className='btn btn-secondary'>
-     <Link to="/home">project two</Link>
+<h4>This is a demo e-commerce website without javasript functionality.It is create with Html and Css.</h4>
+</div>
+<div>
+<button className='btn btn-wide mx-auto bg-primary text-black px-4'>
+    <a href='https://condescending-noether-fd783b.netlify.app/'>Calculation</a>
+   
 </button>
-<button className='btn btn-primary ml-5'>
-     <Link to="/about">project three </Link>
+<p>This is a normal income-expense calculation site.you can easily calculate your monthly savings.This site technology bring to play html,css & javascript</p>
+</div>
+<div className='my-9'>
+<button className='btn btn-wide mx-auto bg-primary text-black px-4'>
+    <a href='https://apple-nationwide-distributor.web.app/'>SERVICE MANAGE</a>
+   
 </button>
+<p>This is a demo Warehouse management website.its a primary Mern stack project.you can comportable with this functionality which is created with html css bootstrap javascript and ReactJs with many functionalities.</p>
+</div>
+
 
                         </Col>
                         
