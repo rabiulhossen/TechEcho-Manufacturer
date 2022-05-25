@@ -9,9 +9,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import PageTitle from "../common/PageTitle";
 import { useForm } from "react-hook-form";
 import GoogleSign from "./GoogleSign";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Login() {
-  
+
+  const emailRef = useRef('');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -37,8 +39,35 @@ let errorElement;
     return( errorElement = <p className="text-red-600"> Error: {error?.message}</p>);
   }
 
+  const passwordReset = async () => {
+    const email = emailRef.current.value;
+    if (email) {
+      await SendPasswordResetEmail(email);
+      toast.success('check your email!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+  
+    } else {
+      toast.warn('🦄 enter your email!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+    }
+  };
+
   if (user) {
-    navigate("/home");
+    navigate("/dashboard");
   }
   const onSubmit = (data) => {
     const email = data.email;
@@ -82,14 +111,38 @@ let errorElement;
         {errors.password?.type === "required" && "password is required"}
 
         <input
-          className=" btn btn-block btn-info mt-8 mb-2"
+          className=" btn btn-block btn-info mt-8 mb-3"
           type="submit"
           value="Submit"
         />
       </form>
-      <p>New User? <Link to="/register" className='text-indigo-900 text-decoration-none'> Please Register</Link> </p>
+      <p>New User? <Link to="/register" className=' btn-link text-decoration-none uppercase pl-2 font-serif font-bold text-slate-900 pt-3'> Please Register</Link> </p>
+      <p>
+        Forget Password?
+        <button
+          onClick={passwordReset}
+          className="btn btn-link text-slate-900 font-serif font-bold pe-auto text-decoration-none"
+        >
+          Reset Password
+        </button>
+      </p>
+
       {errorElement}
       <GoogleSign />
+
+      <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        >
+
+        </ToastContainer>
     </div>
   );
 }

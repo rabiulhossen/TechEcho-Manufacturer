@@ -15,6 +15,7 @@ import MyOrders from "./components/Dashboard/MyOrders";
 import Profile from "./components/Dashboard/Profile";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 import AddReview from "./components/others/AddReview/AddReview";
+import OnlyOnepart from "./components/OnlyOnepart/OnlyOnepart";
 
 function App() {
   return (
@@ -40,10 +41,18 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}>
            
           </Route>
-          <Route path="addreview" element={<AddReview />}>
-          
+         
+          <Route path="addreview" element={<AddReview></AddReview>}>
+           
           </Route>
-        </Route>
+         
+          <Route path="myorder/:id" element={<OnlyOnepart/>}>
+           
+          </Route>
+         
+          </Route>
+          
+       
         <Route path="*" element={<Notfound></Notfound>} />
       </Routes>
 

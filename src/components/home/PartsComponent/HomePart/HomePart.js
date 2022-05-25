@@ -7,13 +7,13 @@ export default function HomePart({ part }) {
   console.log(part);
   const { name, price, Quantity, available, about, img } = part;
   const navigate = useNavigate();
-  const serviceDetails = () => {
-    navigate("/dashboard");
+  const serviceDetails = (id) => {
+    navigate(`/purchase/${id}`);
   };
   return (
     <div className="parts">
 
-      <img className="w-full" style={{ height: "350px" }} src={img} alt="" />
+      <img className="w-100% pl-2 pr-4 rounded-xl" style={{ height: "350px" }} src={img} alt="" />
 
       <h3 className="px-2 text-2xl mt-2 font-serif font-medium">Name:{name}</h3>
 
@@ -35,10 +35,10 @@ export default function HomePart({ part }) {
         Available Quantity:{available}
       </h5>
       <button
-        onClick={() => serviceDetails()}
+        onClick={() => serviceDetails(part._id)}
         className="primary btn-wide font-serif font-bold"
       >
-        manage now
+        book now
       </button>
     </div>
   );

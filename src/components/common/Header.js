@@ -64,11 +64,11 @@ export default function Header() {
                         to={item.to}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900"
-                            : "text-#120E4  hover:bg-purple-800 hover:text-white",
+                            ? "bg-gray-900 font-serif text-xl"
+                            : "text-#120E4 text-xl font-serif hover:bg-purple-800 hover:text-white",
                           "active:bg-purple-300",
                           "focus:bg-sky-200",
-                          "px-3 py-2 rounded-md text-md font-bold"
+                          "px-3 py-2 rounded-md text-md font-bold font-sans"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -185,10 +185,10 @@ export default function Header() {
                   to={item.to}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
+                      ? "bg-gray-900 text-white font-serif"
                       : "text-gray-700 hover:bg-sky-500 hover:text-black",
                     "focus:bg-purple-500",
-                    "block px-3 py-2 rounded-md text-base font-bold"
+                    "block px-3 py-2 rounded-md text-base font-bold font-serif"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

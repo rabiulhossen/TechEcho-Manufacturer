@@ -21,7 +21,7 @@ export default function Dashboard() {
 
       {/* <!-- Sidebar content here --> */}
       <li><Link to="/dashboard" className='font-bold font-serif'>My Profile</Link></li>
-      <li><Link to="/dashboard/order" className='font-bold font-serif'>My Order</Link></li>
+      <li><Link to="/dashboard/myorder" className='font-bold font-serif'>My Order</Link></li>
       <li><Link to="/dashboard/addreview" className='font-bold font-serif'>Add a Review</Link></li>
     </ul>
   

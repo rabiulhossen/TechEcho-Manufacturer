@@ -38,7 +38,7 @@ export default function NewsLetter() {
        onSubmit={handleSubmit(onSubmit)}
      >
        <label className="label">
-         <span className="label-text">Enter Your Name</span>
+         <span className="label-text text-primary">Enter Your Name</span>
        </label>
        <input
          type="text"
@@ -49,7 +49,7 @@ export default function NewsLetter() {
        {errors.email?.type === "required" && "Name is required"}
        
        <label className="label">
-         <span className="label-text">Enter Your Email</span>
+         <span className="label-text text-primary">Enter Your Email</span>
        </label>
        <input
          type="email"
