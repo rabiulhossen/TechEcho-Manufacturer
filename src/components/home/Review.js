@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Review({ review }) {
-  const { name, _id, pic, rating } = review;
+  const { name, _id, pic, rating,about } = review;
   return (
     <div className="card shadow-lg lg:max-w-lg bg-base-100 shadow-xl">
       <div className="card-body">
@@ -16,7 +16,7 @@ export default function Review({ review }) {
           </div>
         </div>
         <p className="text-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+         {about}
          
         </p>
         <h4 className="text-xl text-left">Personal Rating :{rating}</h4>

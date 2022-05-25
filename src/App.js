@@ -14,6 +14,7 @@ import AddOrder from "./components/Dashboard/AddOrder";
 import MyOrders from "./components/Dashboard/MyOrders";
 import Profile from "./components/Dashboard/Profile";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
+import AddReview from "./components/others/AddReview/AddReview";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}>
            
           </Route>
-          <Route path="profile" element={<Profile />}>
+          <Route path="addreview" element={<AddReview />}>
           
           </Route>
         </Route>

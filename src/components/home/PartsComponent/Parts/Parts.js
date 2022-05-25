@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HomePart from "../HomePart/HomePart";
+import './Parts.css';
 
 export default function Parts() {
   const [parts, setParts] = useState([]);
@@ -11,12 +12,12 @@ export default function Parts() {
 
   return (
     <div>
-      <h4 className="text-5xl text-zinc-900 pb-3 font-semiBold font-serif text-center">
+      <h4 className="text-5xl text-zinc-900 pb-10 font-semiBold font-serif text-center">
       
 
         Our Product Intro
       </h4>
-      <div>
+      <div className="parts-container">
 {
     parts && parts.map(part =>
           <HomePart 

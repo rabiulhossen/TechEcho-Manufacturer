@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f95f026.css",
+    "main.js": "/static/js/main.331f7585.js",
+    "static/js/787.15d5a233.chunk.js": "/static/js/787.15d5a233.chunk.js",
+    "static/media/404.jpg": "/static/media/404.cbd0b09f3de9041c15f1.jpg",
+    "static/media/red.jpg": "/static/media/red.9eb515f9b4618fad1ddc.jpg",
+    "static/media/samsung.jpg": "/static/media/samsung.f86c4e9e0a1aad8edb5e.jpg",
+    "static/media/cooler.jpg": "/static/media/cooler.f3bfc69bb6e4be43a42e.jpg",
+    "static/media/email.jpg": "/static/media/email.f972ab52ef81ffbb9611.jpg",
+    "static/media/google.png": "/static/media/google.7e2e80ea7f011480566d.png",
+    "static/media/Daraz.pk Logo.svg": "/static/media/Daraz.pk Logo.b18b5760b179adfe4e42a3bd497ab3ba.svg",
+    "static/media/Alibaba.svg": "/static/media/Alibaba.131cd2253a49abf3840dbb36ac586d16.svg",
+    "static/media/Amazon.svg": "/static/media/Amazon.5b233354ba0ff2b2197339d2834c511c.svg",
+    "static/media/Walmart.svg": "/static/media/Walmart.9a3eff918520729c14d702f981bd8e3b.svg",
+    "static/media/Rakuten.svg": "/static/media/Rakuten.0ca133d150808880921cc205f682c531.svg",
+    "static/media/Ebay.svg": "/static/media/Ebay.7c00c0b714b9ad8b548e9f7cbd8d0121.svg",
+    "index.html": "/index.html",
+    "main.8f95f026.css.map": "/static/css/main.8f95f026.css.map",
+    "main.331f7585.js.map": "/static/js/main.331f7585.js.map",
+    "787.15d5a233.chunk.js.map": "/static/js/787.15d5a233.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f95f026.css",
+    "static/js/main.331f7585.js"
+  ]
+}
