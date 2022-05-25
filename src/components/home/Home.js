@@ -4,9 +4,9 @@ import Bannner from "./Bannner";
 import Global from "./Global";
 import Summary from "./Summary";
 import Typewriter from "typewriter-effect";
-import PartMap from "./Parts/PartMap/PartMap";
 import NewsLetter from "./NewsLetter/NewsLetter";
 import Reviews from "./Reviews";
+import Parts from "./PartsComponent/Parts/Parts";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* animation  */}
 
-      <h2 className="mb-5 mt-2 font-semiBold text-4xl font-serif text-opacity-50 text-white">
+      <h2 className="mb-5 mt-2 font-semiBold text-4xl font-serif  text-white">
         <Typewriter
           options={{
             strings: [
@@ -34,7 +34,7 @@ export default function Home() {
 
       <PageTitle title="Home"></PageTitle>
       <Bannner></Bannner>
-      <PartMap />
+      <Parts />
       <Summary />
       <Global></Global>
       <Reviews />

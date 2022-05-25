@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import './NewsLetter.css';
+import chalkAnimation from 'chalk-animation';
+import { motion } from "framer-motion"
 
 export default function NewsLetter() {
   const {
@@ -17,9 +19,14 @@ export default function NewsLetter() {
   };
 
   return (
+
+
     <div className="mt-16 newsDiv rounded-lg">
+     
       <h1 className="text-2xl z-10 font-serif">
-        Stay Update with Us <span className="shadow-xl rounded-md text-orange-600 to-purple-700 font-semibold text-3xl px-1 z-10">Newsletter</span>
+     
+      
+    Stay Update with Us <span className="shadow-xl rounded-md text-orange-600 to-purple-700 font-semibold text-3xl px-1 z-10">Newsletter</span>
       </h1>
       <div></div>
       <form
@@ -58,3 +65,7 @@ export default function NewsLetter() {
     </div>
   );
 }
+
+
+
+// eslint-disable-next-line no-unused-expressions

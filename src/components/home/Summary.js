@@ -4,7 +4,7 @@ import React from 'react'
 export default function Summary() {
   return (
     <div>
-         <h1 className='my-8 fw-bold text-5xl font-serif text-zinc-900'>Our Success Rate</h1>
+         <h1 className='my-8 text-5xl font-serif text-zinc-900'>Our Success Rate</h1>
 <div className=" shadow px-8 py-6 mb-10 mt-4  text-center lg:w-3/5 justify-center mx-auto rounded-none ">
   
   <div className="stat bg-slate-100 rounded-xl  text-justify mx-auto lg:rounded-none">
