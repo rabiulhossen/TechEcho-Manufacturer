@@ -37,10 +37,10 @@ function App() {
           }
         >
           <Route index element={<MyOrders></MyOrders>}>
-            {" "}
+           
           </Route>
           <Route path="profile" element={<Profile />}>
-            {" "}
+          
           </Route>
         </Route>
         <Route path="*" element={<Notfound></Notfound>} />

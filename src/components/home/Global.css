@@ -1,10 +1,14 @@
 .global-container{
      margin-left:4rem;
+     margin-right:4rem;
      margin-top: 50px;
+     padding: 30px;
+     border-radius: 20px;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     grid-column-gap: 15px;
-     grid-row-gap:40px ;
+     grid-column-gap: 25px;
+     grid-row-gap:50px ;
+     box-shadow: 5px 5px 10px 8px rgba(242, 234, 234, 0.445);
  }
  
  /* make services responsive */
@@ -12,6 +16,7 @@
  
  @media only screen and (max-width:626px) {
      .global-container{
+         
          grid-template-columns: repeat(1, 1fr);
      }
  }

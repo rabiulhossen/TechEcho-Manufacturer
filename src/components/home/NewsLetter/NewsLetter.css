@@ -1,0 +1,11 @@
+.newsDiv{
+     background-image: url('../../../resources/img/email.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-origin: border-box;
+     background-color: transparent;
+     color: rgb(238, 250, 248);
+     background-blend-mode:overlay;
+     border-radius: 10px;
+     z-index: -1;
+}

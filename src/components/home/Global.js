@@ -11,7 +11,7 @@ export default function Global() {
   return (
     <div>
 <h1 className='text-4xl font-bold font-serif mx-auto my-5'>Our Global Partners</h1>
-<div className='global-container'>
+<div className='global-container first-letter:'>
 
 
      <div className="">
@@ -26,17 +26,17 @@ export default function Global() {
           <img src={ebay} alt="" />
           <p className='font-semiBold font-serif text-xl text-left text-zinc-900'>Richful E-commerce Site</p>
      </div>
-     <div className="">
+     <div className=" shadow-lg">
           <img src={daraz} alt="" />
-          <p className='font-semiBold font-serif text-xl text-left text-zinc-900'>Best Retail Seller</p>
+          <p className='font-semiBold font-serif text-xl text-left text-pink-900 '>Best Retail Seller</p>
      </div>
-     <div className="">
+     <div className=" shadow-lg">
           <img src={walmart} alt="" />
-          <p className='font-semiBold font-serif text-xl text-left text-zinc-900'>Best</p>
+          <p className='font-semiBold font-serif text-xl text-left text-pink-900'>World Famous</p>
      </div>
-     <div className="">
+     <div className=" shadow-lg ">
           <img src={rakuten} alt="" />
-          <p className='font-semiBold font-serif text-xl text-left text-zinc-900'>Super Sports Sponsor</p>
+          <p className='font-semiBold font-serif text-xl text-left text-pink-900'>Super Sports Sponsor</p>
      </div>
 </div>
 
