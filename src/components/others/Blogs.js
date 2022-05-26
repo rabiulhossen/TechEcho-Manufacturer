@@ -13,7 +13,7 @@ export default function Blogs() {
         How will you improve the performance of a React Application?
       </h1>
       <label
-        for="my-modal-1"
+        htmlFor="my-modal-1"
         className="btn modal-button bg-secondary text-black hover:text-white mb-8 mt-2 "
       >
         Show Answer
@@ -48,7 +48,7 @@ export default function Blogs() {
           <h3 className="font-bold text-lg mt-3">I hope You Understand!</h3>
 
           <div className="modal-action">
-            <label for="my-modal-1" className="btn bg-primary text-slate-900">
+            <label htmlFor="my-modal-1" className="btn bg-primary text-slate-900">
               Close!
             </label>
           </div>
@@ -61,7 +61,7 @@ export default function Blogs() {
         What are the different ways to manage a state in a React application?
       </h1>
       <label
-        for="my-modal-2"
+        htmlFor="my-modal-2"
         className="btn modal-button bg-secondary text-black hover:text-white mb-8 mt-2 "
       >
         Show Answer
@@ -98,7 +98,7 @@ export default function Blogs() {
           <h3 className="font-bold text-lg mt-3">I hope You Understand!</h3>
 
           <div className="modal-action">
-            <label for="my-modal-2" className="btn bg-primary text-slate-900">
+            <label htmlFor="my-modal-2" className="btn bg-primary text-slate-900">
               Close!
             </label>
           </div>
@@ -111,7 +111,7 @@ export default function Blogs() {
         How does prototypical inheritance work?
       </h1>
       <label
-        for="my-modal-3"
+        htmlFor="my-modal-3"
         className="btn modal-button bg-secondary text-black hover:text-white mb-8 mt-2 "
       >
         Show Answer
@@ -137,7 +137,7 @@ export default function Blogs() {
           <h3 className="font-bold text-lg mt-3">I hope You Understand!</h3>
 
           <div className="modal-action">
-            <label for="my-modal-3" className="btn bg-primary text-slate-900">
+            <label htmlFor="my-modal-3" className="btn bg-primary text-slate-900">
               Close!
             </label>
           </div>
@@ -150,7 +150,7 @@ export default function Blogs() {
         What is a unit test? Why should write unit tests?{" "}
       </h1>
       <label
-        for="my-modal-4"
+        htmlFor="my-modal-4"
         className="btn modal-button bg-secondary text-black hover:text-white mb-8 mt-2 "
       >
         Show Answer
@@ -179,7 +179,7 @@ export default function Blogs() {
           <h3 className="font-bold text-lg mt-3">I hope You Understand!</h3>
 
           <div className="modal-action">
-            <label for="my-modal-4" className="btn bg-primary text-slate-900">
+            <label htmlFor="my-modal-4" className="btn bg-primary text-slate-900">
               Close!
             </label>
           </div>

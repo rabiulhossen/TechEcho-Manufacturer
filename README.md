@@ -1,6 +1,6 @@
 # THIS IS MANUFECTURER COMPANY WEBSITE...
 
-This project was Boosted with [firebase deploy](https://github.com/facebook/create-react-app).
+# [netlify deploy](https://meek-treacle-5beccb.netlify.app/).
 
 
 ## Available Features
@@ -16,9 +16,9 @@ This project was Boosted with [firebase deploy](https://github.com/facebook/crea
 
 ## Technology bring to play
 
-### HTML5 CSS3 TailwindCss
-### Javascript ES6 ReactJs
-### NodeJs ExpressJs Mongodb....
+### HTML5,CSS3,TailwindCss
+### Javascript,ES6,ReactJs
+### NodeJs,ExpressJs,Mongodb....
 
 
 

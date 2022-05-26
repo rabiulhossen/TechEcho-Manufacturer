@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import PageTitle from "../../../common/PageTitle";
 import { useForm } from "react-hook-form";
+import UserDetail from "../UserDetail";
 
 export default function Purchase() {
   const navigate =useNavigate();
@@ -81,16 +82,16 @@ navigate("/dashboard/order")
         Product Information :{name}
       </h1>
       <PageTitle title="Product-details" />
-      <div class="card w-96 bg-base-100 shadow-xl image-full mx-auto text-left text-white">
+      <div className="card w-96 bg-base-100 shadow-xl image-full mx-auto text-left text-white">
         <figure>
           <img src={img} alt="Shoes" className="hover:opacity-90" />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">{name}</h2>
-          <h2 class="card-title">Min Order:{Quantity}</h2>
-          <h2 class="card-title">Available:{available}</h2>
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
+          <h2 className="card-title">Min Order:{Quantity}</h2>
+          <h2 className="card-title">Available:{available}</h2>
           <p>{about}</p>
-          <div class="card-actions justify-end items-center mt-3 ">
+          <div className="card-actions justify-end items-center mt-3 ">
             <form onSubmit={handleSubmit(onSubmit)}>
             <input className='input shadow-2xl text-zinc-900 rounded-lg w-1/3' placeholder='Your Quantity' type="number" {...register("Qunatity",{min:50,max:300} )} /> 
             {errors.Quantity?.type === "required" && "Min Qunatity is required"}
@@ -115,6 +116,7 @@ navigate("/dashboard/order")
           ></ToastContainer>
         </div>
       </div>
+      <UserDetail />
     </div>
   );
 }
