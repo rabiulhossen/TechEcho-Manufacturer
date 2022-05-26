@@ -7,10 +7,24 @@ import Typewriter from "typewriter-effect";
 import NewsLetter from "./NewsLetter/NewsLetter";
 import Reviews from "./Reviews";
 import Parts from "./PartsComponent/Parts/Parts";
+import auth from "../../firebase.init";
+
+import {
+  useAuthState,
+  useSendEmailVerification,
+} from "react-firebase-hooks/auth";
 
 export default function Home() {
+  const [user, loading] = useAuthState(auth);
+  console.log(user,'gfytghyg');
+
+if(user?.email == 'yyy@yyy.yyy'){
+console.log('thhi is');
+}
+
   return (
     <div className="my-5">
+      
       <h1 className="mb-5 text-5xl font-serif font-semibold text-zinc-900">
         Welcome To Our Site
       </h1>

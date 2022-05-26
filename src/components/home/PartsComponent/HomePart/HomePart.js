@@ -31,7 +31,7 @@ export default function HomePart({ part }) {
         Quantity:{Quantity}
       </h5>
 
-      <h5 className="px-2 text-2xl mt-1 mb-3 font-serif font-medium">
+      <h5 className="px-2 text-2xl mt-1 mb-5 font-serif font-medium">
         Available Quantity:{available}
       </h5>
       <button

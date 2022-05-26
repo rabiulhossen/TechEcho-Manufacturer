@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-<footer className="footer p-10  bg-gradient-to-r from-yellow-200 via-purple-400 to-yellow-200 text-base-content">
+<footer className="footer p-10  bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 text-base-content">
   <div>
     <span className="footer-title text-white text-xl opacity-100">Services</span> 
     <a className="link link-hover font-sans text-black">Branding</a> 

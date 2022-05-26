@@ -11,6 +11,7 @@ import Progressing from "../common/Progressing";
 
 const RequireAuth = ({ children }) => {
   const [user, loading] = useAuthState(auth);
+  console.log(user)
   const location = useLocation();
   // const [sendEmailVerification, sending, error] =
   //   useSendEmailVerification(auth);

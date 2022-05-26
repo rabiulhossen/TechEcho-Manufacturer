@@ -67,7 +67,7 @@ let errorElement;
   };
 
   if (user) {
-    navigate("/dashboard");
+    navigate(from);
   }
   const onSubmit = (data) => {
     const email = data.email;

@@ -185,6 +185,41 @@ export default function Blogs() {
           </div>
         </div>
       </div>
+      <h1 className="font-bold text-lg">
+        {" "}
+        <code>Q5:</code>
+        Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts
+      </h1>
+      <label
+        htmlFor="my-modal-10"
+        className="btn modal-button bg-secondary text-black hover:text-white mb-8 mt-2 "
+      >
+        Show Answer
+      </label>
+
+      {/* <!-- Put this part before --> */}
+      <input type="checkbox" id="my-modal-10" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box w-11/12 max-w-5xl pl-5">
+          <p className="pt-4 pb-3 font-medium font-serif">
+            {" "}
+            <code className="">Answer:</code> I use [products, setProducts] = useStatee([]) there are many reasons
+          </p>
+
+          <li className="text-justify pl-8">
+            There are the principle reasons to state change in react application.without this you can not change data from ui.this hooks render data for user.
+          </li>
+          
+
+          <h3 className="font-bold text-lg mt-3">I hope You Understand!</h3>
+
+          <div className="modal-action">
+            <label htmlFor="my-modal-10" className="btn bg-primary text-slate-900">
+              Close!
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
