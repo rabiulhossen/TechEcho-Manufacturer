@@ -7,7 +7,7 @@ export default function UserDetail() {
 
      const { register, handleSubmit } = useForm();
      const onSubmit = data =>{ console.log(data);
- const url = "http://localhost:5000/address";
+ const url = "https://ancient-hamlet-69799.herokuapp.com/address";
  fetch(url,{
      method:'POST',
  headers:{

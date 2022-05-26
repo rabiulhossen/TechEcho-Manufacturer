@@ -5,7 +5,7 @@ import './Parts.css';
 export default function Parts() {
   const [parts, setParts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/parts")
+    fetch("https://ancient-hamlet-69799.herokuapp.com/parts")
       .then((res) => res.json())
       .then((data) => setParts(data));
   }, []);

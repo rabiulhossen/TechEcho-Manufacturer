@@ -6,7 +6,7 @@ export default function AddReview() {
 
      const { register, handleSubmit } = useForm();
      const onSubmit = data =>{ console.log(data);
- const url = "http://localhost:5000/reviews";
+ const url = "https://ancient-hamlet-69799.herokuapp.com/reviews";
  fetch(url,{
      method:'POST',
  headers:{

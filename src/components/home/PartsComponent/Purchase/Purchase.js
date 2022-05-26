@@ -21,7 +21,7 @@ export default function Purchase() {
 
   const onSubmit = (data ,id,q) => {
 
-    if (q < Quantity) {
+    if (q < Quantity || 0) {
       toast.warn(`🦄 Minimun Quantity is ${Quantity}`, {
         position: "top-center",
         autoClose: 5000,
@@ -33,7 +33,7 @@ export default function Purchase() {
         });
     
     } 
-    else if (q > available){
+    else if (q > available || 0){
       toast.warn(`🦄 Maximum Quantity is ${available}`, {
         position: "top-center",
         autoClose: 5000,
@@ -48,7 +48,7 @@ export default function Purchase() {
 navigate("/dashboard/order")
       let Quantity = parseInt(q) + 1;
       const data = { Quantity };
-      const url = `http://localhost:5000/parts/${id}`;
+      const url = `https://ancient-hamlet-69799.herokuapp.com/parts/${id}`;
       fetch(url, {
         method: "POST",
         headers: {
@@ -70,7 +70,7 @@ navigate("/dashboard/order")
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/parts/${id}`)
+    fetch(`https://ancient-hamlet-69799.herokuapp.com/parts/${id}`)
       .then((res) => res.json())
       .then((data) => setShow(data));
   }, [reload]);
