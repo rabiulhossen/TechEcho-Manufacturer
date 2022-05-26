@@ -16,10 +16,12 @@ import Profile from "./components/Dashboard/Profile";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 import AddReview from "./components/others/AddReview/AddReview";
 import OnlyOnepart from "./components/OnlyOnepart/OnlyOnepart";
+import Purchase from "./components/home/PartsComponent/Purchase/Purchase";
 
 function App() {
   return (
-    <div className="App bg-gradient-to-r from-sky-400 via-purple-400 to-sky-400">
+    <div className="App bg-base-100 font-serif">
+      {/* bg-gradient-to-r from-sky-400 via-purple-400 to-sky-400 */}
       <Header />
 
       <Routes>
@@ -30,6 +32,11 @@ function App() {
         <Route path="myportfolio" element={<MyPortfolio></MyPortfolio>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/register" element={<Register></Register>} />
+        <Route path="/purchase/:id" element={
+          <RequireAuth>
+            <Purchase />
+          </RequireAuth>
+        }></Route>
         <Route
           path="/dashboard"
           element={
@@ -38,7 +45,7 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route index element={<MyOrders></MyOrders>}>
+          <Route path="order" element={<MyOrders></MyOrders>}>
            
           </Route>
          

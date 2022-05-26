@@ -5,9 +5,9 @@ export default function Summary() {
   return (
     <div>
          <h1 className='my-8 text-5xl font-serif text-zinc-900'>Our Success Rate</h1>
-<div className=" shadow px-8 py-6 mb-10 mt-4  text-center lg:w-3/5 justify-center mx-auto rounded-none ">
+<div className=" shadow-lg px-8 py-6 mb-10 mt-4  text-center lg:w-3/5 justify-center mx-auto rounded-none ">
   
-  <div className="stat bg-slate-100 rounded-xl  text-justify mx-auto lg:rounded-none">
+  <div className="stat bg-zinc-100 rounded-xl  text-justify mx-auto lg:rounded-none">
     <div className="stat-figure text-primary">
       <p className='font-bold font-serif'>Total</p>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-11 h-10 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>

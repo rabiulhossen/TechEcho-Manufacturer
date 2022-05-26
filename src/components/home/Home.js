@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* animation  */}
 
-      <h2 className="mb-5 mt-2 font-semiBold text-4xl font-serif  text-white">
+      <h2 className="mb-5 mt-2 font-semiBold text-4xl font-serif  text-slate-600">
         <Typewriter
           options={{
             strings: [

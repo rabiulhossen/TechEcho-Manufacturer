@@ -11,22 +11,22 @@ export default function HomePart({ part }) {
     navigate(`/purchase/${id}`);
   };
   return (
-    <div className="parts">
+    <div className="parts mr-6">
 
-      <img className="w-100% pl-2 pr-4 rounded-xl" style={{ height: "350px" }} src={img} alt="" />
+      <img className="w-100% " style={{ height: "300px"} } src={img} alt="" />
 
-      <h3 className="px-2 text-2xl mt-2 font-serif font-medium">Name:{name}</h3>
+      <h3 className=" text-2xl mt-1 font-serif font-medium">Name:{name}</h3>
 
-      <h4 className="px-2 text-xl mt-2 font-serif font-medium">
+      <h4 className=" text-xl mt-1 font-serif font-medium">
         Description:{about}
       </h4>
 
-      <h5 className="px-2 text-2xl mt-1 font-serif font-medium">
+      <h5 className=" text-2xl mt-1 font-serif font-medium">
         {" "}
         Price:{price}
       </h5>
 
-      <h5 className="px-2 text-2xl mt-1 font-serif font-medium">
+      <h5 className=" text-2xl mt-1 font-serif font-medium">
         {" "}
         Quantity:{Quantity}
       </h5>

@@ -40,7 +40,7 @@ let errorElement;
   }
 
   const passwordReset = async () => {
-    const email = emailRef.current.value;
+    const email = emailRef.value;
     if (email) {
       await SendPasswordResetEmail(email);
       toast.success('check your email!', {
