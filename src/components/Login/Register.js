@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import PageTitle from '../common/PageTitle'
 import { useForm } from "react-hook-form";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword ,  useSignInWithGoogle,useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 import Progressing from '../common/Progressing';
 import GoogleSign from './GoogleSign';
+import useToken from '../hooks/useToken.js';
 
 
 export default function Register() {
@@ -16,9 +17,16 @@ export default function Register() {
     loading, 
     error] =
     useCreateUserWithEmailAndPassword(auth);
+
+    const [updateProfile, updating, errorP] = useUpdateProfile(auth);
+
+    const [SignInWithGoogle,guser,gloading,gerror] = useSignInWithGoogle(auth);
+
+const [token]= useToken(user || guser)
+
     const navigate = useNavigate();
     const navigation = () => {
-      navigate("/inventory")
+      navigate("/")
     }
   const {
     register,
@@ -26,7 +34,7 @@ export default function Register() {
     handleSubmit,
   } = useForm();
 
-  if (loading ) {
+  if (loading || updating) {
     return <Progressing></Progressing>;
   }
 
@@ -34,21 +42,25 @@ export default function Register() {
   if (loading) {
     return <Progressing />
   }
-    if (user) {
+    if (user || token) {
       console.log("user", user);
-      navigate("/")
+      navigate("/dashboard")
     }
-    if (error) {
+    if (error ||errorP) {
       errorElement = <p className="text-red-600"> Error: {error?.message}</p>
     }
   const onSubmit = async (data) => {
     const name = data.name;
+
+console.log('my name is',name)
+
     const email = data.email;
     const password = data.password;
 
     await createUserWithEmailAndPassword(email, password);
 
-    console.log(name,email,password);
+    await updateProfile({displayName:name});
+
   };
   return (
     <div>
@@ -107,3 +119,19 @@ export default function Register() {
 
   )
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

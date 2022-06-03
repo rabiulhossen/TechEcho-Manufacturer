@@ -6,6 +6,7 @@ import Summary from "./Summary";
 import Typewriter from "typewriter-effect";
 import NewsLetter from "./NewsLetter/NewsLetter";
 import Reviews from "./Reviews";
+import Progressing from '../common/Progressing';
 import Parts from "./PartsComponent/Parts/Parts";
 import auth from "../../firebase.init";
 
@@ -20,6 +21,9 @@ export default function Home() {
 
 if(user?.email == 'yyy@yyy.yyy'){
 console.log('thhi is');
+}
+if(loading){
+  return <Progressing></Progressing>
 }
 
   return (

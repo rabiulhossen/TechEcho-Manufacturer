@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Review({ review }) {
-  const { name, _id, pic, rating,about } = review;
+  const { name, _id, img, rating,about } = review;
   return (
     <div className="card shadow-xl lg:max-w-lg bg-zinc-200 shadow-xl">
       <div className="card-body">
@@ -11,7 +11,7 @@ export default function Review({ review }) {
           </div>
           <div className="avatar">
             <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 mr-5">
-              <img src={pic} alt="" />
+              <img src={img} alt="" />
             </div>
           </div>
         </div>

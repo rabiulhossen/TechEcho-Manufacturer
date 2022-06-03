@@ -10,6 +10,7 @@ import { signOut } from "firebase/auth";
 
 const navigation = [
   { name: "Home", to: "/home", current: false },
+  // { name: "Purchase", to: "/purchase", current: false },
   { name: "Blogs", to: "/blogs", current: false },
   { name: "About", to: "/about", current: false },
   { name: "Portfolio", to: "/myportfolio", current: false }
@@ -123,7 +124,7 @@ export default function Header() {
                         <Menu.Item>
                           {({ active }) => (
                             <Link
-                              to="#"
+                              to="dashboard/profile"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"

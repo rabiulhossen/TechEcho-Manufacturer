@@ -1,27 +1,52 @@
 import React,{useState,useEffect} from 'react'
+import { Table } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate, useParams } from "react-router-dom";
+import auth from '../../firebase.init';
 
 export default function MyOrders() {
 
-const [user,setUser] =useState([])
+const [parts,setParts] =useState([])
+
+const [user] = useAuthState(auth);
 const navigate =useNavigate();
-  const { id } = useParams();
-  const { name, price, Quantity, available, img } = user;
 
 
-  
-  
+
 
   return (
     <div>
 <h1 className="text-2xl font-serif mb-4 text-slate-900">
-       My Product Information 
-      </h1>
- <h1>name</h1>
- <h1>price </h1>
- Quantity
+       My Product Information: { parts.length}
+     </h1>
+     <table className="table w-full">
+       
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Payment</th>
+                            <th> Cancel Order</th>
+                         
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            parts.map((a, index) => <tr>
+                                <th>{index + 1}</th>
+                                <td>{a.name}</td>
+                                <td>{a.email}</td>
+                                <td>{a.part}</td>
+                                <td><button className="bg-primary">delete</button> </td>
+                            </tr>)
+                        }
 
-    </div>
+
+                    </tbody>
+                </table>
+
+</div>
   )
 }
 

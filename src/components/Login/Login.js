@@ -39,8 +39,10 @@ let errorElement;
     return( errorElement = <p className="text-red-600"> Error: {error?.message}</p>);
   }
 
-  const passwordReset = async () => {
-    const email = emailRef.value;
+  const passwordReset = async (data) => {
+    const email = data.email;
+    // const email = data.email;
+console.log('your eam',email);
     if (email) {
       await SendPasswordResetEmail(email);
       toast.success('check your email!', {
@@ -67,9 +69,10 @@ let errorElement;
   };
 
   if (user) {
-    navigate(from);
+    navigate(from,{replace:true});
   }
   const onSubmit = (data) => {
+    
     const email = data.email;
     const password = data.password;
     signInWithEmailAndPassword(email, password);
@@ -116,12 +119,12 @@ let errorElement;
           value="Submit"
         />
       </form>
-      <p>New User? <Link to="/register" className=' btn-link text-decoration-none uppercase pl-2 font-serif font-bold text-slate-900 pt-3'> Please Register</Link> </p>
+      <p>New User? <Link to="/register" className=' btn-link text-decoration-none uppercase pl-2 font-serif font-semiBold text-slate-900 pt-3'> Please Register</Link> </p>
       <p>
         Forget Password?
         <button
           onClick={passwordReset}
-          className="btn btn-link text-slate-900 font-serif font-bold pe-auto text-decoration-none"
+          className="btn btn-link font-semiBold text-slate-900 font-serif pe-auto text-decoration-none"
         >
           Reset Password
         </button>

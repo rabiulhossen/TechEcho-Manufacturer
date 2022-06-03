@@ -4,6 +4,8 @@ import './NewsLetter.css';
 import back from '../../../resources/img/email.jpg'
 import chalkAnimation from 'chalk-animation';
 import { motion } from "framer-motion"
+import { toast, ToastContainer } from "react-toastify";
+
 
 export default function NewsLetter() {
   // const rainbow = chalkAnimation.rainbow('Stay Update with Us Newsletter'); 
@@ -17,6 +19,15 @@ export default function NewsLetter() {
   const onSubmit = (data) => {
     const email = data.email;
     const name = data.name;
+    toast('Thank You for staying with us', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
 
     console.log(data);
   };
@@ -27,10 +38,10 @@ export default function NewsLetter() {
     <div className="mt-16 newsDiv rounded-lg">
    
      <div className="form-div">
-     <h1 className="text-2xl z-10 font-serif">
+     <h1 className="text-3xl z-10 font-serif text-black">
      
      {/* {rainbow} */}
-   Stay Update with Us <span className="shadow-xl rounded-md text-orange-600 to-purple-700 font-semibold text-3xl px-1 z-10">Newsletter</span>
+   Stay Update with Us <span className="shadow-xl rounded-md text-purple-700 font-semibold text-3xl px-1 z-10">Newsletter</span>
      </h1>
      <div></div>
      <form
@@ -43,7 +54,7 @@ export default function NewsLetter() {
        <input
          type="text"
          placeholder="Type here Name"
-         className="input input-bordered z-20 shadow-2xl rounded-lg w-full max-w-xs"
+         className="input input-bordered z-20 text-black  shadow-2xl rounded-lg w-full max-w-xs"
          {...register("name", { required: true })}
        />
        {errors.email?.type === "required" && "Name is required"}
@@ -54,7 +65,7 @@ export default function NewsLetter() {
        <input
          type="email"
          placeholder="Type here Email"
-         className="input shadow-3xl w-full max-w-xs"
+         className="input shadow-3xl w-full text-black max-w-xs"
          {...register("email", { required: true })}
        />
        {errors.email?.type === "required" && "Email is required"}
@@ -69,6 +80,7 @@ export default function NewsLetter() {
 
      </div>
      <img src={back} className='bg-image' alt="" />
+     <ToastContainer />
     </div>
   );
 }
