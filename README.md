@@ -1,6 +1,6 @@
 # THIS IS MANUFECTURER COMPANY WEBSITE...
 
-# [netlify deploy](https://meek-treacle-5beccb.netlify.app/).
+### [netlify deploy](https://meek-treacle-5beccb.netlify.app/)
 
 
 ## Available Features
@@ -16,9 +16,9 @@
 
 ## Technology bring to play
 
-### HTML5,CSS3,TailwindCss
-### Javascript,ES6,ReactJs
-### NodeJs,ExpressJs,Mongodb....
+#### `HTML5,CSS3,TailwindCss`
+#### `Javascript,ES6,ReactJs`
+#### `NodeJs,ExpressJs,Mongodb....`
 
 
 
