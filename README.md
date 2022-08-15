@@ -1,6 +1,6 @@
 # THIS IS MANUFECTURER COMPANY WEBSITE...
 
-### [netlify deploy](https://meek-treacle-5beccb.netlify.app/)
+### `live site👍`: [netlify deploy](https://meek-treacle-5beccb.netlify.app/)
 
 
 ## Available Features
